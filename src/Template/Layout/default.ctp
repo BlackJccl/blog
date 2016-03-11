@@ -14,6 +14,19 @@
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    
+    <aside>
+    <nav>
+        <ul>
+            <li>Registro Usuario</li>
+            <li>Ingreso</li>
+            <li>Articulos</li>
+            <li>Mostrar</li>
+        </ul>
+    </nav>
+</aside>
+    <div class="container">
+      <?= $this->Flash->render() ?>
+      <?= $this->fetch('content') ?>
+    </div>
 </body>
 </html>

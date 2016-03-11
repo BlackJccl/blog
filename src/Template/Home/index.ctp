@@ -5,11 +5,5 @@
         </div>
     </div>
 </header>
-<aside>
-    <nav>
-        <ul>
-            <li>Registro Usuario</li>
-        </ul>
-    </nav>
-</aside>
+
 
