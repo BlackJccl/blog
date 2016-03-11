@@ -7,4 +7,52 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Source Sans Pro',sans-serif;
 }
-
+header{
+    z-index: 1030;
+    position: relative;
+    max-height: 100%;
+    border-bottom: 1px solid rgba(220, 221, 222,0.98);
+}
+.header-master{
+    background-color: rgba(220, 221, 222,0.98);
+    position: fixed;
+    right: 0;
+    left: 0;
+    
+}
+.menupr{
+    position: fixed;
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;
+    top: 0;
+    left: 0;
+    padding-top: 180px;
+    background-color:#222d32;
+}
+.menu_subitem ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu_item li, a{
+    color: #fff;
+    border-bottom: 1px solid #4f4f4f;
+    display: block;
+    cursor: pointer;
+    text-indent: 1.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.menu_item > li:hover > li.active{
+    border-left-color: #3c8dbc;
+}
+.menu_item > li > a:hover{
+    color: #fff;
+    background-color: #1e282c;
+    border-left-color: #3c8dbc;
+}
+.contenido{
+    margin-left: 250px;
+    margin-top: 14%;
+}

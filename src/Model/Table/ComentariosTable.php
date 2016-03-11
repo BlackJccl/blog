@@ -19,4 +19,4 @@ class ComentariosTable extends Table{
             'propertyName'=>'Usuario']);
     }    
 }
-?>
+

@@ -8,4 +8,4 @@ class UsuariosTable extends Table {
         $this->entityClass('App\Model\Entity\Usuario');
     }
 }
-?>
+

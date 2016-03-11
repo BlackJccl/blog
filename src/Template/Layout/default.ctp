@@ -14,19 +14,28 @@
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <aside>
-    <nav>
-        <ul>
-            <li>Registro Usuario</li>
-            <li>Ingreso</li>
-            <li>Articulos</li>
-            <li>Mostrar</li>
-        </ul>
-    </nav>
-</aside>
-    <div class="container">
-      <?= $this->Flash->render() ?>
-      <?= $this->fetch('content') ?>
+    <header>
+        <div class="header-master container-fluid">
+            <div class="row">
+              <?= $this->Html->image('logo.png',['alt'=>'Blog'])?>
+            </div>
+        </div>
+    </header>
+    <aside class="menupr">
+        <nav class="menu_subitem">
+            <ul class="menu_item">
+                <li><?=$this->Html->link('Registro Usuario', '/usuarios/registrar') ?></li>
+                <li><a>Ingreso</a></li>
+                <li><a>Articulos</a></li>
+                <li><a>Mostrar</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="contenido">
+        <aside>
+            <?= $this->Flash->render() ?>
+            <?= $this->fetch('content') ?>
+        </aside>
     </div>
 </body>
 </html>

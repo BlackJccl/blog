@@ -1,6 +1,10 @@
 <?php
 namespace App\Controller;
-class UsuariosController {
+class UsuariosController extends AppController{
+    
+    public function index() {
+        
+    }
     public function registrar() {
     $usuario = $this->Usuarios->newEntity();
     $this->set('usuario',$usuario);
