@@ -12,7 +12,7 @@ class UsuariosController extends AppController{
             $usuario = $this->Usuarios->patchEntity($usuario,  $this->request->data);
             if ($this->Usuarios->save($usuario)) {
                 $this->Flash->success('Registro Guardado');
-                $this->redirect(['action'=>'index']);
+                $this->redirect(['action'=>'registrar']);
             }  else {
                 $this->Flash->error('Error no Guardado');
             }

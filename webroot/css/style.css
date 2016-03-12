@@ -54,5 +54,10 @@ header{
 }
 .contenido{
     margin-left: 250px;
-    margin-top: 14%;
+    margin-top: 10%;
+}
+@media (min-width: 980px) and (max-width:1280px){
+    .contenido{
+        margin-top: 7%;
+    }
 }

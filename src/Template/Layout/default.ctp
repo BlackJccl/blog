@@ -26,7 +26,7 @@
             <ul class="menu_item">
                 <li><?=$this->Html->link('Registro Usuario', '/usuarios/registrar') ?></li>
                 <li><a>Ingreso</a></li>
-                <li><a>Articulos</a></li>
+                <li><?=$this->Html->link('Articulos', '/articulos/') ?></li>
                 <li><a>Mostrar</a></li>
             </ul>
         </nav>
