@@ -9,8 +9,8 @@ class ArticulosController extends AppController{
         $articulo = $this->Articulos->newEntity();
         $this->set('articulo', $articulo);
         if($this->request->is('post')){
-            $rol = $this->Articulos->patchEntity($articulo, $this->request->data);
-            if( $this->Roles->save($articulo) ) {
+            $articulo = $this->Articulos->patchEntity($articulo, $this->request->data);
+            if( $this->Articulos->save($articulo) ) {
                 $this->Flash->success('Registro guardado correctamente');
                 $this->redirect(['action'=>'index']);
             } else {
